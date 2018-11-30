@@ -7,6 +7,11 @@ html {
 body {
     margin: 0
 }
+#baonguyen {
+    color: #2196f3;
+    font-weight: 600;
+    text-decoration: underline;
+}
 
 article,
 aside,
@@ -25816,6 +25821,12 @@ h6,
     margin-bottom: 10px;
 }
 
+.feature-section-3 .about-me-info-col .content .view-cv-btn{
+    display: block;
+    width: 30%;
+    margin: 30px auto;
+    min-width: 200px;
+}
 .feature-section-3 .about-me-figure-col .figure-box figure {
     width: 80%;
     border-radius: 50%;
