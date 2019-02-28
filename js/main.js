@@ -176,8 +176,8 @@ function viewMyWork() {
 
 var Banner = {
 	// properties
-	numbOfParticles: 200,
-	radius: 3,
+	numbOfParticles: 100,
+	radius: 5,
 	paticles: [],
 	canvasOuter: $('.intro-section'),
 	bcanvas: $('#banner-canvas')[0],
