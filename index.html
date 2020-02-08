@@ -207,6 +207,23 @@
             <div class="container">
                 <h2 class="title">Projects</h2>
                 <div class="row">
+                    <div class="col-sm-6 col-md-4"><a
+                            href="https://github.com/LeTranAnhVu/wolt_fe_pre_assignment" title="portfolio"
+                            target="_blank">
+                        <div class="portfolio-box portfolio-box1">
+                            <div class="overlay">
+                                <div class="caption">
+                                    <h5>Build Restaurant List</h5>
+                                    <p>React hook
+                                        <br> - Fetch api and use redux to manage
+                                        <br> - Animate and pre-blur image for nice UI -UX
+                                        <br> - Sort
+                                    </p>
+                                </div>
+                            </div>
+                            <img src="./img/react-restaurant.png" alt="image">
+                        </div>
+                    </a></div>
                   <div class="col-sm-6 col-md-4"><a
                           href="http://marketingchallengers.org/" title="portfolio"
                           target="_blank">
@@ -521,5 +538,21 @@
 <!-- endinject -->
 <script src="./js/thuvien.js"></script>
 <script src="./js/main.js"></script>
+<script>
+    function squarizeImg() {
+        var images = $('.portfolio-section .portfolio-box img');
+        images.each(function(index, image){
+            var width = $(image).width();
+            $(image).height(width);
+        })
+    }
+    $(document).ready(function(){
+        squarizeImg();
+    });
+    $(window).resize(function(){
+        squarizeImg();
+    });
+
+</script>
 </body>
 </html>

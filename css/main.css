@@ -6564,7 +6564,9 @@ ul {
       bottom: 20px;
       padding-left: 20px; }
   .portfolio-section .portfolio-box img {
-    width: 100%; }
+    width: 100%;
+    object-fit: cover;
+  }
   .portfolio-section .portfolio-box:hover .overlay {
     bottom: 0;
     transform: scaleY(1);
