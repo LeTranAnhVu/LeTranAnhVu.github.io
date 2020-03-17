@@ -1,0 +1,11 @@
+{
+  "name": "LeTranAnhVu.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/LeTranAnhVu/LeTranAnhVu.github.io.git",
+  "author": "letrananhvu <vule5726@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mini-particle": "^1.0.1"
+  }
+}

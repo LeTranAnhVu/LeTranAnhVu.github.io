@@ -696,7 +696,7 @@
     <!-- endinject -->
     <script src="./js/thuvien.js"></script>
     <script src="./js/main.js"></script>
-    <script src="./js/myParticleCanvas.js"></script>
+    <script src="./node_modules/mini-particle/index.js"></script>
 
     <script>
       function squarizeImg() {
@@ -709,8 +709,21 @@
       $(document).ready(function() {
         squarizeImg();
         // canvas
-        var banner = new BannerFactory(150, 1, 180, ".intro-section", "#banner-canvas");
-        banner.setup();
+        var wrapperEl = document.querySelector(".intro-section");
+        var canvasEl = document.querySelector("#banner-canvas");
+        var particleOpt = {
+          particleColor: "#fff",
+          webColor: "#0ff"
+        };
+        var particle = new ParticleFactory(
+          wrapperEl,
+          canvasEl,
+          particleOpt,
+          150,
+          2,
+          100
+        );
+        particle.setup();
       });
       $(window).resize(function() {
         squarizeImg();
